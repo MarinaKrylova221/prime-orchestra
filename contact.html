@@ -1,0 +1,139 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Orchestra - Konzertseite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<body>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="bilder/logo.png" height="40px" width="80px" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="prime-orchestra.html">Startseite</a></li>
+                            <li class="nav-item"><a class="nav-link" href="prime-orchestra.html">Über uns</a></li>
+                            <li class="nav-item"><a class="nav-link" href="prime-orchestra.html">Veranstaltungen</a></li>
+                            <li class="nav-item"><a class="nav-link" href="prime-orchestra.html">Galerie</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="container">
+            <div class="jumbotron" aria-hidden="true">
+                <h2>Willkommen bei Prime Orchestra!</h2>
+                <p>Erleben Sie die perfekte Verschmelzung von klassischer Musik und modernen Arrangements. Unsere einzigartigen Konzerte schaffen eine unvergessliche Atmosphäre, die Sie nicht verpassen dürfen!</p>
+                <a href="prime-orchestra.html" class="btn btn-warning">Mehr erfahren</a>
+            </div>
+        </div>
+    
+        <main>
+            <section class="container my-5" id="contact" role="region" aria-labelledby="contact-heading">
+                <h2 id="contact-heading" class="text-center mb-4">Kontakt</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 id="contact-info" tabindex="0">Kontaktinformationen</h3>
+                        <p><strong>Adresse:</strong> Hauptstraße 123, 96450 Coburg</p>
+                        <p><strong>Telefon:</strong> <a href="tel:+499561123456">+49 9561 123456</a></p>
+                        <p><strong>E-Mail:</strong> <a href="mailto:info@primeorchestra.de">info@primeorchestra.de</a></p>
+                        <p>Folgen Sie uns auf Social Media:</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook (öffnet in neuem Tab)"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram (öffnet in neuem Tab)"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter (öffnet in neuem Tab)"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 id="ticket-form" tabindex="0">Bestellen Sie Ihre Tickets</h3>
+                        <form aria-labelledby="ticket-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Ihr Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Max Mustermann" required aria-required="true">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Ihre E-Mail-Adresse</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="max.mustermann@example.com" required aria-required="true">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Ihre Telefonnummer</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+49 123 4567890" required aria-required="true">
+                            </div>
+                            <div class="mb-3">
+                                <label for="event" class="form-label">Wählen Sie eine Veranstaltung</label>
+                                <select class="form-control" id="event" name="event" required aria-required="true">
+                                    <option value="">Bitte auswählen</option>
+                                    <option value="event1">Symphony in Coburg - 25. Dezember 2024</option>
+                                    <option value="event2">The Magic of Classics - 10. Januar 2025</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="quantity" class="form-label">Anzahl der Tickets</label>
+                                <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="10" value="1" required aria-required="true">
+                            </div>
+                            <button type="submit" class="btn btn-danger">Tickets bestellen</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Audioplayer Dropdown -->
+     <div class="btn-group-vertical audio-dropdown" role="navigation" aria-label="Audioplayer Dropdown">
+        <button type="button" class="btn btn-audio dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            🎵 Audio
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="audioDropdown">
+            <li>
+                <a class="dropdown-item" href="#" aria-label="Track 1 abspielen">
+                    <audio controls aria-label="Track 1">
+                        <source src="audio/track1.mp3" type="audio/mpeg">
+                        Ihr Browser unterstützt den Audio-Tag nicht.
+                    </audio>
+                    <span>Track 1</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#" aria-label="Track 2 abspielen">
+                    <audio controls aria-label="Track 2">
+                        <source src="audio/track2.mp3" type="audio/mpeg">
+                        Ihr Browser unterstützt den Audio-Tag nicht.
+                    </audio>
+                    <span>Track 2</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#" aria-label="Track 3 abspielen">
+                    <audio controls aria-label="Track 3">
+                        <source src="audio/track3.mp3" type="audio/mpeg">
+                        Ihr Browser unterstützt den Audio-Tag nicht.
+                    </audio>
+                    <span>Track 3</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+            <a href="#top" class="scroll-to-top" aria-label="Nach oben scrollen">
+                &uarr; Nach oben
+            </a>
+
+        </main>
+        <footer>
+            
+            <div class="container">
+                <p>&copy; 2024 Prime Orchestra. Alle Rechte vorbehalten.</p>
+            </div>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
